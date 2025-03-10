@@ -13,6 +13,7 @@ const routes = [
     path: '/',
     handler: async () => {
       await delay(500);
+      console.log('GET /');
       return db.shifts.list();
     },
   },
